@@ -19,6 +19,7 @@ formPromisesGenerator.addEventListener('submit', async (event) => {
     }, delay);
   });
 
+
   try {
     const result = await notificationPromise;
     iziToast.success({
