@@ -4,7 +4,9 @@ import "flatpickr/dist/flatpickr.min.css";
 import iziToast from "izitoast";
 import "izitoast/dist/css/iziToast.min.css";
 
-const buttonStart = document.querySelector('[data-start=""]');
+const buttonStart = document.querySelector('[data-start]');
+buttonStart.disabled = true;
+
 const inputDate = document.querySelector('#datetime-picker');
 let userSelectedDate;
 
@@ -80,3 +82,4 @@ function updateTimer(days, hours, minutes, seconds) {
 function formatTimeUnit(unit) {
   return unit < 10 ? `0${unit}` : `${unit}`;
 }
+
